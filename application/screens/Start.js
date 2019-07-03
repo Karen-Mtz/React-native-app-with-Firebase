@@ -16,7 +16,10 @@ export default class Start extends Component {
         title: 'Expo App'
     }
     login () {
-
+        const navigateAction = NavigationActions.navigate({
+            routeName: 'Login'
+        });
+        this.props.navigation.dispatch(navigateAction);
     }
 
     register () {

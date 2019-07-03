@@ -3,12 +3,16 @@ Y LAS PANTALLAS PRIVADAS */
 import React from 'react';
 import { StackNavigator } from 'react-navigation'; //navegacion entre paginas de start login y registro
 import StartScreen from '../screens/Start';
+import LoginScreen from '../screens/Login';
 
 export default StackNavigator (
     {
         Start: {
             screen: StartScreen
-        }
+        },
+        Login: {
+            screen: LoginScreen
+        },
     },
     {
         initialRouteName: 'Start',

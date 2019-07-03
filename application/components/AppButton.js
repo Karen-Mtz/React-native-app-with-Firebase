@@ -24,7 +24,7 @@ export default class AppButton extends Component {
                     borderWidth: 0,
                     borderRadius: 5,
                     marginBottom: 5,
-                    width: width
+                    // width: width
                 }}
                 title= { title }
                 icon= {
