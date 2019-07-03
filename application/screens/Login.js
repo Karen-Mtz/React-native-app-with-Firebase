@@ -75,9 +75,6 @@ export default class Login extends Component {
                             bgColor='#3FBF3F'
                             title='Login'
                             action={this.login.bind(this)}
-                            iconName='sign-in'
-                            iconSize={30}
-                            iconColor='#0A2D0A'
                         />
                     </Card>
                 </View>
