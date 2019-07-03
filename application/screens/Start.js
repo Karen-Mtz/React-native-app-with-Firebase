@@ -12,7 +12,9 @@ import Toast from 'react-native-simple-toast'; //notificaciones para el usuario 
 import * as firebase from 'firebase';
 
 export default class Start extends Component {
-
+    static navigationOptions = {
+        title: 'Expo App'
+    }
     login () {
 
     }
