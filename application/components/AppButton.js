@@ -12,11 +12,11 @@ import { Dimensions } from 'react-native';
 
 export default class AppButton extends Component {
     render () {
-        const { action, iconName, iconColor, title, bgColor} = this.props
-        const {width} = Dimensions.get( 'window' ); //para que ocupe 100% de la pantalla
+        const { action, iconName, iconColor, title, bgColor } = this.props
+        const { width } = Dimensions.get( 'window' ); //para que ocupe 100% de la pantalla
         return (
             <Button
-                onPress={action}
+                onPress={ action }
                 buttonStyle={{
                     backgroundColor: bgColor,
                     height: 45,
