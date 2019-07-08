@@ -11,7 +11,7 @@ import { Card } from 'react-native-elements';
 const Form = t.form.Form; //tag para hacer fomulario
 import * as firebase from 'firebase';
 import firebaseConfig from '../utils/firebase';
-firebase.initializeApp(firebaseConfig)
+// firebase.initializeApp(firebaseConfig)
 import Toast from 'react-native-simple-toast';
 // import console = require('console');
 
