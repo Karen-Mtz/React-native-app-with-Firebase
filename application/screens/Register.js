@@ -59,16 +59,22 @@ export default class Register extends Component {
     register () {
         if(this.validate) {
         //cuando el formulario esté validado se registra al usuario
-
+        firebase.auth().createUserWithEmailAndPassword(
+            this.validate.email, this.validate.password 
+        )
+        .then(() => {
+            Toast.showWithGravity('Registro correcto, bienvenido', Toast.LONG, Toast.BOTTOM);
+        })
+        .catch(err => {
+            Toast.showWithGravity(err.message, Toast.LONG, Toast.BOTTOM);
+        })
         }
     }
     onChange (user) {
         //Se ejecuta cuando el formulario cambie
         //Estado del usuario para comprobar si los passwords coinciden
         this.setState({user});
-        if(user.password_confirmation !== null && user.password_confirmation !== '') {
-            this.validate = this.refs.form.getValue();
-        }
+        this.validate = this.refs.form.getValue();
     }
 
     render () {

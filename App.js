@@ -6,7 +6,6 @@ import firebaseConfig from './application/utils/firebase';
 import * as firebase from 'firebase';
 firebase.initializeApp(firebaseConfig);
 
-
 export default class App extends React.Component {
   //para detectar si el usuario está identificado
   //o no y mostrar zona pública o privada
